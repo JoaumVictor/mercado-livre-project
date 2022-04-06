@@ -1,0 +1,50 @@
+$amarelo: #FFF159;
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $amarelo;
+  height: 70px;
+  width: 100vw;
+
+  h1{
+    font-size: 16px;
+  }
+
+  .logomarca {
+    width: 120px;
+  }
+
+  .disney {
+    width: 250px;
+  }
+
+  .search-bar {
+    background-color: white;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding: 1px 20px;
+    margin: 3px 50px;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .input-search {
+      background-color: transparent;
+      border: none;
+      border-style: none;
+      border-radius: 2px;
+      height: 35px;
+      padding-left: 5px;
+      width: 400px;
+    }
+
+    .icon-car {
+      cursor: pointer;
+      font-size: 20px;
+    }
+  }
+}
