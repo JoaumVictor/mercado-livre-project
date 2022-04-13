@@ -3,16 +3,19 @@ import { Link } from 'react-router-dom';
 import { BsSearch } from 'react-icons/bs';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
+import { addProducts } from '../store/dataObjs';
+import { useDispatch } from 'react-redux';
 import { getProductsFromCategoryAndQuery } from '../services/api';
 import logomarca from '../images/logomarca.png';
 import disney from '../images/disney.png';
 
-export default function Header({ setObjProducts }) {
+export default function Header() {
+  const dispatch = useDispatch();
   const [ inputSearch, setInputSearch ] = useState('');
 
   const getProducts = () => {
     getProductsFromCategoryAndQuery('', inputSearch).then((obj) => {
-      setObjProducts(obj.results);
+      dispatch(addProducts(obj.results));
     });
   };
   const setInput = ({ target }) => setInputSearch(target.value);
