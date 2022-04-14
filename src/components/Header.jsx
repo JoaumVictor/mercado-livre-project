@@ -6,8 +6,8 @@ import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { addProducts } from '../store/dataObjs';
 import { useDispatch } from 'react-redux';
 import { getProductsFromCategoryAndQuery } from '../services/api';
-import logomarca from '../images/logomarca.png';
 import disney from '../images/disney.png';
+import logo from '../images/mercado-livre-logomarca.png';
 
 export default function Header() {
   const dispatch = useDispatch();
@@ -22,13 +22,14 @@ export default function Header() {
 
   return (
     <header className="header-content">
-        <div>
-          <img className="logomarca" src={ logomarca } alt="" />
-          <div>
-            <p>Informe seu Cep</p>
-          </div>
-        </div>
-        <div className="search-bar">
+
+      <div className='header-div-1'>
+        <img className="logomarca" src={ logo } alt="" />
+        <h1>mercadinho livre</h1>
+      </div>
+
+      <div className="header-div-2">
+        <div className="header-div-2-search">
           <input
             className="input-search"
             onChange={ setInput }
@@ -36,20 +37,40 @@ export default function Header() {
             type="text"
             placeholder="Buscar produtos, marcas e muito mais..."
           />
+          <div className='bar'> </div>
           <BsSearch
-            className="icon-car"
+            className="icon-button"
             data-testid="query-button"
             type="button"
             onClick={ getProducts }
           />
         </div>
+        <div className="header-div-2-options">
+          <p>Categorias</p>
+          <p>Ofertas do dia</p>
+          <p>Histórico</p>
+          <p>Supermercado</p>
+          <p>Moda</p>
+          <p>Vender</p>
+          <p>Contato</p>
+        </div>
+      </div>
+
+      <div className='header-div-3'>
         <img className="disney" src={ disney } alt="" />
-        <Link data-testid="shopping-cart-button" to="/carrinho">
-          <AiOutlineShoppingCart
-            className="car-button"
-            type="button"
-          />
-        </Link>
-      </header>
+        <div className="sub-div-3">
+          <p>Cadastre-se</p>
+          <p>Entre</p>
+          <p>Compras</p>
+          <Link data-testid="shopping-cart-button" to="/carrinho">
+            <AiOutlineShoppingCart
+              className="car-button"
+              type="button"
+              />
+          </Link>
+        </div>
+      </div>
+
+    </header>
   )
 }
