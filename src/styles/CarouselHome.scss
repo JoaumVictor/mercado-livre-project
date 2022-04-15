@@ -1,0 +1,12 @@
+.carousel-content {
+
+  img {
+    min-height: 370px;
+    object-fit: cover;
+    width: 100%;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

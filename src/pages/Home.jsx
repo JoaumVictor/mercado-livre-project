@@ -4,7 +4,9 @@ import { v4 as uuidv4 } from 'uuid';
 
 import { addCategories, addProducts } from '../store/dataObjs';
 import Header from '../components/Header';
+import CardPayment from '../components/CardPayment';
 import Categories from '../components/Categories';
+import CarouselHome from '../components/CarouselHome';
 import RenderProducts from '../components/RenderProducts';
 import { getCategories, getProductsFromCategoryAndQuery } from '../services/api';
 import '../styles/Home.scss';
@@ -30,6 +32,8 @@ export default function Home() {
   return (
     <div className="home-content">
       <Header />
+      <CarouselHome />
+      <CardPayment />
       <section className="products-container">
         <section className="categories">
           { categories?.map((item, index) => (

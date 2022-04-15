@@ -1,7 +1,7 @@
 .products-container {
   background-color: #E7E7E7;
   display: flex;
-  padding: 50px 100px;
+  padding: 50px 80px;
   width: 100vw;
 
   .categories {
@@ -26,7 +26,7 @@
     justify-content: space-evenly;
     flex-flow: row wrap;
     padding-right: 200px;
-    width: 80%;
+    width: 90%;
 
     .card-product {
       background-color: white;
@@ -34,8 +34,12 @@
       border-radius: 8px;
       height: 300px;
       padding: 20px;
-      margin: 20px;
+      margin: 15px;
       width: 25%;
+
+      img {
+        width: 80%
+      }
       .card-product-link {
         color: black;
         text-decoration: none;
