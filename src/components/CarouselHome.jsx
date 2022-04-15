@@ -5,7 +5,7 @@ import slide1 from '../images/carousel1.jpg';
 import slide2 from '../images/carousel2.jpg';
 import slide3 from '../images/carousel3.jpg';
 import slide4 from '../images/carousel4.jpg';
-
+import slide5 from '../images/carousel5.jpg';
 
 export default function CarouselHome() {
   return (
@@ -42,6 +42,7 @@ export default function CarouselHome() {
       <img src={ slide2 } alt="" />
       <img src={ slide3 } alt="" />
       <img src={ slide4 } alt="" />
+      <img src={ slide5 } alt="" />
     </Carousel>
   )
 }

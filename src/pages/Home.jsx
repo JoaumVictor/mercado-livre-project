@@ -8,6 +8,7 @@ import CardPayment from '../components/CardPayment';
 import Categories from '../components/Categories';
 import CarouselHome from '../components/CarouselHome';
 import RenderProducts from '../components/RenderProducts';
+import ContainerMP from '../components/ContainerMP';
 import { getCategories, getProductsFromCategoryAndQuery } from '../services/api';
 import '../styles/Home.scss';
 import '../styles/Header.scss';
@@ -34,6 +35,7 @@ export default function Home() {
       <Header />
       <CarouselHome />
       <CardPayment />
+      <ContainerMP />
       <section className="products-container">
         <section className="categories">
           { categories?.map((item, index) => (
