@@ -35,8 +35,8 @@ export default function CarouselHome() {
       autoplayInterval={ 10000 }
       wrapAround={ true }
       slidesToShow={ 1 }
-      className="carousel-content"
       adaptiveHeight={ true }
+      className="carousel-content"
     >
       <img src={ slide1 } alt="" />
       <img src={ slide2 } alt="" />

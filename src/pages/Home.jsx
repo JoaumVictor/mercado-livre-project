@@ -9,9 +9,10 @@ import Categories from '../components/Categories';
 import CarouselHome from '../components/CarouselHome';
 import RenderProducts from '../components/RenderProducts';
 import ContainerMP from '../components/ContainerMP';
+import Recommended from '../components/Recommended';
 import { getCategories, getProductsFromCategoryAndQuery } from '../services/api';
 import '../styles/Home.scss';
-import '../styles/Header.scss';
+import ContainerMP2 from '../components/ContainerMP2';
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -35,7 +36,9 @@ export default function Home() {
       <Header />
       <CarouselHome />
       <CardPayment />
+      <Recommended />
       <ContainerMP />
+      <ContainerMP2 />
       <section className="products-container">
         <section className="categories">
           { categories?.map((item, index) => (

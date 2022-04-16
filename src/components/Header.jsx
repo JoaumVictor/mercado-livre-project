@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { BsSearch } from 'react-icons/bs';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
+import '../styles/Header.scss';
 import { addProducts } from '../store/dataObjs';
 import { useDispatch } from 'react-redux';
 import { getProductsFromCategoryAndQuery } from '../services/api';

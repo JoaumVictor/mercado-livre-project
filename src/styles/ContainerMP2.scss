@@ -1,0 +1,41 @@
+.ContainerMP2-container {
+  margin: 60px auto;
+  width: 80%;
+
+  p {
+    color: rgba($color: #000000, $alpha: 0.5);
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .ContainerMP2-carousel {
+    position: relative;
+    .img1, .img2, .img3, .img4 {
+      height: 400px;
+      // ALTURA PARA TESTES
+
+      .mp2-description {
+        align-items: center;
+        border: 3px solid red;
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+
+        img {
+          border-radius: 4px;
+          box-shadow: 10px 10px 10px rgba($color: #000000, $alpha: 0.3);
+          width: 80px;
+        }
+      }
+    }
+
+    .image {
+      border-radius: 8px;
+      margin: 1px auto;
+      height: 250px;
+      min-width: 100%;
+    }
+
+  }
+}

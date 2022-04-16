@@ -1,0 +1,20 @@
+.recommended-container {
+  margin: 60px auto;
+  width: 80%;
+
+  p {
+    color: rgba($color: #000000, $alpha: 0.5);
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .recommended-carousel {
+    padding: 10px;
+    img {
+      min-height: 200px;
+      margin: 1px auto;
+      width: 95%;
+    }
+  }
+}

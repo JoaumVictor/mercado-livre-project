@@ -10,7 +10,7 @@ export default function CardPayment() {
     <section className="card-payment-section">
       <div>
         <p className='spotlight'>Pagamento rápido e seguro</p>
-        <p className='bgray-color small-font'>com Mercado Pago</p>
+        <p className='bgray-color small-font'>com Mercadinho Pago</p>
       </div>
       <img src={ creditIcon } alt="" />
       <div>
@@ -20,7 +20,7 @@ export default function CardPayment() {
       <img src={ parcelIcon } alt="" />
       <div>
         <p className='spotlight'>Parcelado no boleto</p>
-        <p className="blue-color small-font">Conheça o Mercado Crédito</p>
+        <p className="blue-color small-font">Conheça o Mercadinho Crédito</p>
       </div>
       <img src={ pixIcon } alt="" />
       <div>

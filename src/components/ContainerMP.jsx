@@ -23,7 +23,7 @@ export default function ContainerMP() {
 
       <div className="sub-container-mp-2">
         <div>
-          <p>Conte com os melhores benefícios no Mercado Livre e do Mercado Pago</p>
+          <p>Conte com os melhores benefícios no Mercadinho Livre e do Mercadinho Pago</p>
         </div>
         <div>
           <span>
@@ -40,7 +40,7 @@ export default function ContainerMP() {
           </span>
           <span>
             <img src={ icon4 } alt="" />
-            <p>Mais descontos no Mercado Pago</p>
+            <p>Mais descontos no Mercadinho Pago</p>
           </span>
         </div>
       </div>
