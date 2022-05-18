@@ -10,7 +10,7 @@ import slide5 from '../images/carousel5.jpg';
 export default function CarouselHome() {
   return (
     <Carousel
-      defaultControlsConfig={{
+      defaultControlsConfig={ {
         nextButtonText: '>',
         nextButtonStyle: {
           background: 'none',
@@ -27,15 +27,15 @@ export default function CarouselHome() {
           fill: 'white',
           fontSize: '16px',
           width: '30px',
-        }
-      }}
-      swiping={ true }
-      pauseOnHover={ true }
-      autoplay={ true }
+        },
+      } }
+      swiping
+      pauseOnHover
+      autoplay
       autoplayInterval={ 10000 }
-      wrapAround={ true }
+      wrapAround
       slidesToShow={ 1 }
-      adaptiveHeight={ true }
+      adaptiveHeight
       className="carousel-content"
     >
       <img src={ slide1 } alt="" />
@@ -44,5 +44,5 @@ export default function CarouselHome() {
       <img src={ slide4 } alt="" />
       <img src={ slide5 } alt="" />
     </Carousel>
-  )
+  );
 }
