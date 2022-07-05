@@ -37,8 +37,5 @@ export default function RenderProducts({ alvo }) {
 }
 
 RenderProducts.propTypes = {
-  title: PropTypes.string.isRequired,
-  thumbnail: PropTypes.string.isRequired,
-  price: PropTypes.number.isRequired,
-  id: PropTypes.string.isRequired,
-};
+  alvo: PropTypes.object,
+}.isRequired;

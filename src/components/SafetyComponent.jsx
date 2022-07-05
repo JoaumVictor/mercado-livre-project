@@ -8,5 +8,5 @@ export default function SafetyComponent() {
     <div className="safety-component">
       <img src={ image } alt="" />
     </div>
-  )
+  );
 }

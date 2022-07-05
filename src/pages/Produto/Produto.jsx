@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 import { BsSearch } from 'react-icons/bs';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
-import '../styles/Produto.scss';
-import logomarca from '../images/logomarca.png';
-import disney from '../images/disney.png';
-import { getProductForId } from '../services/api';
+import './index.scss';
+import logomarca from '../../images/logomarca.png';
+import disney from '../../images/disney.png';
+import { getProductForId } from '../../services/api';
 
 export default class Produto extends Component {
   constructor(props) {

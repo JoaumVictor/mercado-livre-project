@@ -11,7 +11,7 @@ export default function Recommended() {
       </div>
       <div className="recommended-content-1">
         <Carousel
-          defaultControlsConfig={{
+          defaultControlsConfig={ {
             nextButtonText: '>',
             nextButtonStyle: {
               background: 'none',
@@ -28,13 +28,13 @@ export default function Recommended() {
               fill: 'transparent',
               fontSize: '0px',
               width: '30px',
-            }
-          }}
-          wrapAround={ true }
+            },
+          } }
+          wrapAround
           cellSpacing={ 50 }
-          swiping={ true }
+          swiping
           slidesToShow={ 3 }
-          adaptiveHeight={ true }
+          adaptiveHeight
           className="recommended-carousel"
         >
           <img src="https://files.tecnoblog.net/wp-content/uploads/2021/04/unnamed-2-e1618521494381.jpg" alt="" />
@@ -47,5 +47,5 @@ export default function Recommended() {
         </Carousel>
       </div>
     </section>
-  )
+  );
 }

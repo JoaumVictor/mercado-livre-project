@@ -1,4 +1,5 @@
 $amarelo: #FFF159;
+$azulzin: #3483FA;
 @import url('http://fonts.cdnfonts.com/css/warlow-sans');
 
 .header-content {
@@ -8,6 +9,14 @@ $amarelo: #FFF159;
   background-color: $amarelo;
   height: 90px;
   width: 100%;
+
+  .link-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 0 8px;
+  }
 
   .header-div-1 {
     align-items: center;

@@ -4,15 +4,15 @@ import { BsSearch } from 'react-icons/bs';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 
 import '../styles/Header.scss';
-import { addProducts } from '../store/dataObjs';
 import { useDispatch } from 'react-redux';
+import { addProducts } from '../store/dataObjs';
 import { getProductsFromCategoryAndQuery } from '../services/api';
 import disney from '../images/disney.png';
 import logo from '../images/mercado-livre-logomarca.png';
 
 export default function Header() {
   const dispatch = useDispatch();
-  const [ inputSearch, setInputSearch ] = useState('');
+  const [inputSearch, setInputSearch] = useState('');
 
   const getProducts = () => {
     getProductsFromCategoryAndQuery('', inputSearch).then((obj) => {
@@ -24,7 +24,7 @@ export default function Header() {
   return (
     <header className="header-content">
 
-      <div className='header-div-1'>
+      <div className="header-div-1">
         <img className="logomarca" src={ logo } alt="" />
         <h1>mercadinho livre</h1>
       </div>
@@ -38,7 +38,7 @@ export default function Header() {
             type="text"
             placeholder="Buscar produtos, marcas e muito mais..."
           />
-          <div className='bar'> </div>
+          <div className="bar"> </div>
           <BsSearch
             className="icon-button"
             data-testid="query-button"
@@ -47,31 +47,31 @@ export default function Header() {
           />
         </div>
         <div className="header-div-2-options">
-          <p>Categorias</p>
-          <p>Ofertas do dia</p>
-          <p>Histórico</p>
-          <p>Supermercado</p>
-          <p>Moda</p>
-          <p>Vender</p>
-          <p>Contato</p>
+          <button className="link-button" type="button">Categorias</button>
+          <button className="link-button" type="button">Histórico</button>
+          <button className="link-button" type="button">Ofertas do dia</button>
+          <button className="link-button" type="button">Supermercado</button>
+          <button className="link-button" type="button">Moda</button>
+          <button className="link-button" type="button">Vender</button>
+          <button className="link-button" type="button">Contato</button>
         </div>
       </div>
 
-      <div className='header-div-3'>
+      <div className="header-div-3">
         <img className="disney" src={ disney } alt="" />
         <div className="sub-div-3">
-          <p>Cadastre-se</p>
-          <p>Entre</p>
-          <p>Compras</p>
+          <button className="link-button" type="button">Cadastre-se</button>
+          <button className="link-button" type="button">Entre</button>
+          <button className="link-button" type="button">Compras</button>
           <Link data-testid="shopping-cart-button" to="/carrinho">
             <AiOutlineShoppingCart
               className="car-button"
               type="button"
-              />
+            />
           </Link>
         </div>
       </div>
 
     </header>
-  )
+  );
 }

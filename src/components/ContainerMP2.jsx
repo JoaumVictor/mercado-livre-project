@@ -14,7 +14,7 @@ export default function ContainerMP2() {
         <p>Benefícios do Mercadinho Pontos</p>
       </div>
       <Carousel
-        defaultControlsConfig={{
+        defaultControlsConfig={ {
           nextButtonText: '>',
           nextButtonStyle: {
             background: 'none',
@@ -30,12 +30,12 @@ export default function ContainerMP2() {
           pagingDotsStyle: {
             fill: 'transparent',
             fontSize: '0px',
-          }
-        }}
-        wrapAround={ true }
-        swiping={ true }
+          },
+        } }
+        wrapAround
+        swiping
         slidesToShow={ 3 }
-        adaptiveHeight={ true }
+        adaptiveHeight
         className="ContainerMP2-carousel"
       >
         <img src={ image1 } alt="" className="image" />
@@ -44,5 +44,5 @@ export default function ContainerMP2() {
         <img src={ image4 } alt="" className="image" />
       </Carousel>
     </section>
-  )
+  );
 }
